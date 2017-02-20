@@ -15,6 +15,10 @@
 		1D6D7BD31E5AE90200B8A905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6D7BD11E5AE90200B8A905 /* LaunchScreen.storyboard */; };
 		1D6D7BDE1E5AE90200B8A905 /* chatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7BDD1E5AE90200B8A905 /* chatTests.swift */; };
 		1D6D7BE91E5AE90200B8A905 /* chatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7BE81E5AE90200B8A905 /* chatUITests.swift */; };
+		1D6D7BFA1E5B076400B8A905 /* outgoingChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7BF81E5B076400B8A905 /* outgoingChatTableViewCell.swift */; };
+		1D6D7BFB1E5B076400B8A905 /* outgoingChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6D7BF91E5B076400B8A905 /* outgoingChatTableViewCell.xib */; };
+		1D6D7BFE1E5B077A00B8A905 /* incomingChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7BFC1E5B077A00B8A905 /* incomingChatTableViewCell.swift */; };
+		1D6D7BFF1E5B077A00B8A905 /* incomingChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6D7BFD1E5B077A00B8A905 /* incomingChatTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		1D6D7BE41E5AE90200B8A905 /* chatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6D7BE81E5AE90200B8A905 /* chatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatUITests.swift; sourceTree = "<group>"; };
 		1D6D7BEA1E5AE90200B8A905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D6D7BF81E5B076400B8A905 /* outgoingChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outgoingChatTableViewCell.swift; sourceTree = "<group>"; };
+		1D6D7BF91E5B076400B8A905 /* outgoingChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = outgoingChatTableViewCell.xib; sourceTree = "<group>"; };
+		1D6D7BFC1E5B077A00B8A905 /* incomingChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = incomingChatTableViewCell.swift; sourceTree = "<group>"; };
+		1D6D7BFD1E5B077A00B8A905 /* incomingChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = incomingChatTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				1D6D7BD11E5AE90200B8A905 /* LaunchScreen.storyboard */,
 				1D6D7BD41E5AE90200B8A905 /* Info.plist */,
 				1D6D7BCC1E5AE90200B8A905 /* chat.xcdatamodeld */,
+				1D6D7BF81E5B076400B8A905 /* outgoingChatTableViewCell.swift */,
+				1D6D7BF91E5B076400B8A905 /* outgoingChatTableViewCell.xib */,
+				1D6D7BFC1E5B077A00B8A905 /* incomingChatTableViewCell.swift */,
+				1D6D7BFD1E5B077A00B8A905 /* incomingChatTableViewCell.xib */,
 			);
 			path = chat;
 			sourceTree = "<group>";
@@ -235,7 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6D7BFF1E5B077A00B8A905 /* incomingChatTableViewCell.xib in Resources */,
 				1D6D7BD31E5AE90200B8A905 /* LaunchScreen.storyboard in Resources */,
+				1D6D7BFB1E5B076400B8A905 /* outgoingChatTableViewCell.xib in Resources */,
 				1D6D7BD01E5AE90200B8A905 /* Assets.xcassets in Resources */,
 				1D6D7BCB1E5AE90200B8A905 /* Main.storyboard in Resources */,
 			);
@@ -263,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D6D7BC81E5AE90200B8A905 /* ViewController.swift in Sources */,
+				1D6D7BFA1E5B076400B8A905 /* outgoingChatTableViewCell.swift in Sources */,
 				1D6D7BCE1E5AE90200B8A905 /* chat.xcdatamodeld in Sources */,
+				1D6D7BFE1E5B077A00B8A905 /* incomingChatTableViewCell.swift in Sources */,
 				1D6D7BC61E5AE90200B8A905 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = chat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.code-brew.chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = chat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.code-brew.chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UserChatData" representedClassName="UserChatData" syncable="YES" codeGenerationType="class">
+        <attribute name="chatText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="userChatData" inverseEntity="UserData" syncable="YES"/>
+    </entity>
+    <entity name="UserData" representedClassName="UserData" syncable="YES" codeGenerationType="class">
+        <attribute name="userFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userChatData" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserChatData" inverseName="userData" inverseEntity="UserChatData" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserData" positionX="-272" positionY="-18" width="128" height="88"/>
+        <element name="UserChatData" positionX="-54" positionY="9" width="128" height="75"/>
+    </elements>
 </model>
