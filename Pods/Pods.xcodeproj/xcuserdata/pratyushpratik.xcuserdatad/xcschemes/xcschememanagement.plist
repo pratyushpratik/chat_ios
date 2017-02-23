@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ASJExpandableTextView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>MBAutoGrowingTextView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-chat.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3F5CD539B315698931ABF0070F07E785</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C19DBAF7D3DE2C23A55FA30379E8DDC6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EACF1F3613C6F54BC4B892ABB7CBDE1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F80CDFA544E5C0380BA545739B42E301</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

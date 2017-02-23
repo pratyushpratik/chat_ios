@@ -1,0 +1,15 @@
+PODS:
+  - ASJExpandableTextView (0.4)
+  - IQKeyboardManager (4.0.8)
+
+DEPENDENCIES:
+  - ASJExpandableTextView
+  - IQKeyboardManager
+
+SPEC CHECKSUMS:
+  ASJExpandableTextView: bfc429e37d4835e628127d3aa09a5e6971e9bfe4
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+
+PODFILE CHECKSUM: 75ac180ef5c353d3a4eefbc8dc9798677fd3edc5
+
+COCOAPODS: 1.2.0

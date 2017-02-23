@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="UserChatData" representedClassName="UserChatData" syncable="YES" codeGenerationType="class">
-        <attribute name="chatText" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="userData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="userChatData" inverseEntity="UserData" syncable="YES"/>
+    <entity name="Chat" representedClassName="Chat" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="chat" inverseEntity="User" syncable="YES"/>
     </entity>
-    <entity name="UserData" representedClassName="UserData" syncable="YES" codeGenerationType="class">
-        <attribute name="userFirstName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="userLastName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="userChatData" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserChatData" inverseName="userData" inverseEntity="UserChatData" syncable="YES"/>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chat" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Chat" inverseName="user" inverseEntity="Chat" syncable="YES"/>
     </entity>
     <elements>
-        <element name="UserData" positionX="-272" positionY="-18" width="128" height="88"/>
-        <element name="UserChatData" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="Chat" positionX="-54" positionY="9" width="128" height="118"/>
+        <element name="User" positionX="-272" positionY="-18" width="128" height="103"/>
     </elements>
 </model>
